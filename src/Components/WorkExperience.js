@@ -23,7 +23,7 @@ class WorkExperience extends Component {
                     <div className="input-fields">
                         <input placeHolder = "Position" name="position" type="text"></input>
                         <input placeHolder = "Company" name="company" type="text"></input>
-                        <input placeHolder = "city" name="city" type="text"></input>
+                        <input placeHolder = "City" name="city" type="text"></input>
                         <input placeHolder = "From" name="from-year" type="text"></input>
                         <input placeHolder = "To" name="to-year" type="text"></input>
                         <button type = "button">Add</button>

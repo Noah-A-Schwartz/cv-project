@@ -1,19 +1,32 @@
 .App {
   text-align: center;
+  
+}
+h2{
+  margin-bottom: 0;
+}
+main{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 input{
  width: 100%;
  margin: 5px;
- height: 2em;
+ height: 4em;
  border-radius: 10px;
 }
 
 
+
+
 .info{
-  margin:auto;
-  margin-top: 1em;
-  width: 50%;
+  margin:5%;
+  margin-top: 3em;
+  width: 45%;
+  height: 100%;
   border-radius: 1%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #9fcfdd57;
@@ -23,6 +36,45 @@ input{
   align-content: center;
   align-items: center;
 }
+
+.cv{
+  margin:5%;
+  margin-top: 3em;
+  width: 30%;
+  height: 50em;
+  border-radius: 1%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #9fcfdd57;
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+}
+.cv-p-info{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.cv-einfo{
+  margin: auto;
+  margin-top: 1em;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.cv-pinfo{
+  margin: auto;
+  margin-top: 1em;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
 .p-info{
   width: 100%;
 }
@@ -44,7 +96,8 @@ input{
 
 
 .input-fields{
-  width: 90%;
+  width: 70%;
+  
   padding: 1em;
   display: flex;
   flex-direction: column;
@@ -58,6 +111,8 @@ input{
   justify-content: flex-start;
   font-size: 2vmin;
   color: white;
+  position: sticky;
+  top:0;
 }
 
 #header-text{
