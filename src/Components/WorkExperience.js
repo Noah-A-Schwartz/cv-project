@@ -26,7 +26,7 @@ class WorkExperience extends Component {
                         <input placeHolder = "City" name="city" type="text"></input>
                         <input placeHolder = "From" name="from-year" type="text"></input>
                         <input placeHolder = "To" name="to-year" type="text"></input>
-                        <button type = "button">Add</button>
+                        {/*<button type = "button">Add</button>*/}
                     </div>
                 </form>
             </div>

@@ -1,36 +1,50 @@
 import React, { Component } from "react";
-
-class CVInfo extends Component {
-    constructor(prop) {
-        super(prop);
+ class CVInfo extends Component {
+    constructor(props) {
+        super(props);
 
         this.state = {
             info: {
-                firstName: "",
-                lastName: "",
-                email: "",
-                phone: ""
+                firstName: props.firstName,
+                lastName: props.lastName,
+                email: props.email,
+                phone: props.phone,
             }
         }
     }
-
-    render() {
+    
+    render(){
+        const {info} = this.props.info;
         return (
             <div className = "cv-p-info">
                 <div className="cv-pinfo">
-                    <h3>Name</h3>
-                    <p>Email</p>
-                    <p>Phone</p>
+                    <div>
+                        <h3>{info.firstName + " " + info.lastName}</h3>
+                    </div>
+                    <div>
+                        <p>{info.email}</p>
+                    </div>
+                    <div>
+                        <p>{info.phone}</p>
+                    </div>
                 </div>
                 <div className = "cv-einfo">
-                    <h3>University Name</h3>
-                    <p>City</p>
-                    <p>Geaduation Degree</p>
-                    <p>Graduation Year</p>
+                    <div>
+                        <h3>University Name</h3>
+                    </div>
+                    <div>
+                        <p>City</p>
+                    </div>
+                    <div>
+                        <p>Degree</p>
+                    </div>
+                    <div>
+                        <p>Graduation Year</p>
+                    </div>
                 </div>
             </div>
 
         );
     }
 }
-export default CVInfo
+export default CVInfo;
